@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+    <title>Plink</title>
+    <style>
+        html, body {
+            margin: 0;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f6f7f9;
+        }
+    
+        div {
+            width: 100%;
+            height: 100%;
+        }
+
+        svg {
+            max-height: 100%;
+            max-width: 100%;
+            background: #ffffff;
+        }
+
+        button {
+            position: absolute;
+            margin: 10px;
+            font-size: 20pt;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function onHotspot(e, destinationPageID) {
+            e.closest("div").hidden = true;
+            document.getElementById(destinationPageID).hidden = false;
+        }
+
+        function onBack(e, parentPageID) {
+            e.closest("div").hidden = true;
+            document.getElementById(parentPageID).hidden = false;
+        }
+    </script>
+    <div id="83F70C92-EB08-43BE-9F50-D6D9D23555AC" >
+    
+    <svg viewBox="0 0 390.0 763.0">
+        <polyline points="117.000,322.333 128.667,316.000 144.000,308.000 165.000,298.000 188.667,286.333 212.333,274.000 234.000,262.667 252.333,252.333 266.667,244.667 275.000,240.667 278.667,240.333 278.667,242.333 277.667,254.667 268.667,273.000 256.333,297.000 241.000,326.000 226.000,357.333 215.333,380.333 200.667,414.667 191.667,437.000 186.333,453.000 185.333,455.333" fill="none" stroke="#1f6feb" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+        
+    </svg>
+</div>
+</body>
+</html>
