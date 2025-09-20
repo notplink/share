@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+    <title>Plink</title>
+    <style>
+        html, body {
+            margin: 0;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f6f7f9;
+        }
+    
+        div {
+            width: 100%;
+            height: 100%;
+        }
+
+        svg {
+            max-height: 100%;
+            max-width: 100%;
+            background: #ffffff;
+        }
+
+        button {
+            position: absolute;
+            margin: 10px;
+            font-size: 20pt;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function onHotspot(e, destinationPageID) {
+            e.closest("div").hidden = true;
+            document.getElementById(destinationPageID).hidden = false;
+        }
+
+        function onBack(e, parentPageID) {
+            e.closest("div").hidden = true;
+            document.getElementById(parentPageID).hidden = false;
+        }
+    </script>
+    <div id="11CE1E86-7D32-4AE3-A86F-AD11497CD918" >
+    
+    <svg viewBox="0 0 375.0 690.0">
+        
+        
+    </svg>
+</div>
+</body>
+</html>
